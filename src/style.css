@@ -1,28 +1,68 @@
-button {
-    width: 100px;
-    height: 40px;
-    border: 3px soldi white;
-    border-radius: 50px !important;
-    background: #202020;
-    color: white;
-    cursor: pointer;
-    outline: none;
-    
-}
-.timmer-window{
-    font-size: 100px;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -55%);
-}
-.buttons {
-    position: absolute;
-    top: 55%;
-    left: 51%;
-    transform: translate(-51.6%, -45%);
+:root {
+  --bg-color: rgb(63, 59, 62);
+  --bg-color-2: #1e90ff;
 }
 
-#background{
-    background-color: rgb(9, 255, 0) !important;
+button {
+  width: 100px;
+  height: 40px;
+  border: 3px soldi white;
+  border-radius: 50px !important;
+  background: #202020;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+
+
+#background {
+  background-color: var(--bg-color) !important;
+}
+
+@media (min-width: 190px) {
+  #timmer-window {
+    font-size: 40px;
+  }
+} 
+
+@media (min-width: 422px) and (max-width: 576px){
+  #background {
+    /* background-color: rgb(255, 6, 6) !important; */
+    display: block;
+    width: 100%
+  }
+  #timmer-window {
+    font-size: 65px;
+  }
+  button{
+    width: 100px;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #timmer-window {
+    font-size: 55px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #timmer-window {
+    font-size: 65px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #timmer-window {
+    font-size: 80px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #timmer-window {
+    font-size: 80px;
+  }
 }
